@@ -19,13 +19,11 @@ Feature: Autenticación y Persistencia de Sesión
     # Puedes usar esto para validaciones subsecuentes y saber el valor real:
     * print 'Sesión iniciada correctamente. JSESSIONID:', sessionCookie.value
 
-  Scenario: Intento de inicio de sesión con credenciales incorrectas (401)
+  Scenario: Intento de inicio de sesión con credenciales incorrectas (400)
     Given path 'login'
     And path 'usuarioInvalido'
     And path 'claveIncorrecta'
     When method GET
     Then status 400
-    # Validación del esquema de error estandarizado
-    # Nota: la estructura exacta JSON dependerá de la respuesta precisa de Parabank, ajustamos usando fuzzy matchers.
-    And match response == '#object'
-    And match response contains any { error: '#ignore', message: '#string', status: '#ignore' }
+    # Validación del mensaje de error devuelto
+    And match response == 'Invalid username and/or password'
