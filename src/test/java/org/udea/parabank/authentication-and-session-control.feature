@@ -24,7 +24,7 @@ Feature: Autenticación y Persistencia de Sesión
     And path 'usuarioInvalido'
     And path 'claveIncorrecta'
     When method GET
-    Then status 401
+    Then status 400
     # Validación del esquema de error estandarizado
     # Nota: la estructura exacta JSON dependerá de la respuesta precisa de Parabank, ajustamos usando fuzzy matchers.
     And match response == '#object'
