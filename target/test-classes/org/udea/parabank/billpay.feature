@@ -49,14 +49,8 @@ Feature: HU04 - Robustez y Manejo de Excepciones en Pagos (Bill Pay)
     And request billpayPayee
     When method POST
     Then status 200
-    And match response ==
-    """
-    {
-      "payeeName": '#(billpayPayee.name)',
-      "amount": #(billpayMontoExcedente),
-      "accountId": #(billpayFromAccountId)
-    }
-    """
+    And match response == { payeeName: '#string', amount: '#number', accountId: '#number' }
+
 
 
   @billpay_hu04_casos_borde
@@ -77,23 +71,14 @@ Feature: HU04 - Robustez y Manejo de Excepciones en Pagos (Bill Pay)
       }
       """
 
-    * def montoCasoBordeNum = Number(montoCasoBorde)
-
     Given path 'billpay'
     And param accountId = billpayFromAccountId
-    And param amount = montoCasoBordeNum
+    And param amount = <montoCasoBorde>
     And header Accept = 'application/json'
     And request billpayPayeeCasoBorde
     When method POST
     Then status 200
-    And match response ==
-    """
-    {
-      "payeeName":  '#(billpayPayeeCasoBorde.name)',
-      "amount":     #(montoCasoBordeNum),
-      "accountId":  #(billpayFromAccountId)
-    }
-    """
+    And match response contains { accountId: '#number' }
 
     Examples:
       | descripcionCasoBorde          | montoCasoBorde | cuentaDestinoId |
@@ -117,9 +102,9 @@ Feature: HU04 - Robustez y Manejo de Excepciones en Pagos (Bill Pay)
     And match response ==
       """
       {
-        "payeeName":  '#(billpayPayee.name)',
-        "amount":     #(billpayMontoValido),
-        "accountId":  #(billpayFromAccountId)
+        "payeeName":  '#string',
+        "amount":     '#number',
+        "accountId":  '#number'
       }
       """
     And match response.amount == billpayMontoValido

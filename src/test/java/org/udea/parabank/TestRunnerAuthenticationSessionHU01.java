@@ -2,7 +2,7 @@ package org.udea.parabank;
 
 import com.intuit.karate.junit5.Karate;
 
-class TestRunnerAuthenticationSession {
+class TestRunnerAuthenticationSessionHU01 {
 
     @Karate.Test
     Karate testAuthenticationSession() {

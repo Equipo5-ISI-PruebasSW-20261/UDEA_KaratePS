@@ -20,7 +20,7 @@ jobs:
           java-version: '8'
 
       - name: Run Karate Tests
-        run: mvn clean test -Dtest=TestRunner "-Dkarate.env=prod" -Dmaven.test.failure.ignore=true
+        run: mvn clean test -Dtest=TestRunnerParallel "-Dkarate.env=prod" -Dmaven.test.failure.ignore=true
 
       - name: Publish Test Report
         uses: mikepenz/action-junit-report@v5
