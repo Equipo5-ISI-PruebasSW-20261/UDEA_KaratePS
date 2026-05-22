@@ -6,7 +6,7 @@ Feature: HU04 - Robustez y Manejo de Excepciones en Pagos (Bill Pay)
     * header Accept = 'application/json'
     * header Content-Type = 'application/json'
 
-    * def billpayCredentials = { username: 'coco92', password: '12345' }
+    * def billpayCredentials = { username: 'bob', password: '12345' }
 
     Given path 'login', billpayCredentials.username, billpayCredentials.password
     When method GET

@@ -6810,3 +6810,1524 @@ classpath:org/udea/parabank/billpay.feature:80
 3 < CF-RAY: 9fd7750bcf87b6ef-BOG
 {"payeeName":"Beneficiario Prueba HU04","amount":1,"accountId":15342}
 
+19:14:01.716 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:14:01.904 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:14:01.942 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:14:01.980 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:14:01.989 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:14:02.015 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:14:02.273 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:14:02.274 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1779408842274
+19:14:02.278 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+19:15:19.526 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:15:57.129 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:21:51.578 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:29:41.816 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:31:15.533 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:31:17.351 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/john/demo
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:31:18.362 [main] DEBUG com.intuit.karate - response time in milliseconds: 1008
+1 < 200
+1 < Date: Fri, 22 May 2026 00:31:18 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7b799accea575-MIA
+{"id":12212,"firstName":"John","lastName":"Smith","address":{"street":"1431 Main St","city":"Beverly Hills","state":"CA","zipCode":"90210"},"phoneNumber":"310-447-4121","ssn":"622-11-9999"}
+
+19:31:44.721 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:31:44.725 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1779409904725
+19:31:44.732 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+19:31:46.297 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/john/demo
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:31:46.297 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/usuarioInvalido/claveIncorrecta
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:31:46.297 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:31:46.297 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:31:46.297 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:31:46.847 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 547
+1 < 200
+1 < Date: Fri, 22 May 2026 00:31:46 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7b84cec1e3015-MIA
+{"id":12212,"firstName":"John","lastName":"Smith","address":{"street":"1431 Main St","city":"Beverly Hills","state":"CA","zipCode":"90210"},"phoneNumber":"310-447-4121","ssn":"622-11-9999"}
+
+19:31:46.866 [pool-2-thread-1] ERROR com.intuit.karate - classpath:org/udea/parabank/authentication-and-session-control.feature:18
+And match sessionCookie != null
+match failed: NOT_EQUALS
+  $ | is equal (NULL:NULL)
+  null
+  null
+
+classpath:org/udea/parabank/authentication-and-session-control.feature:18
+19:31:46.891 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:31:46.977 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 679
+1 < 400
+1 < Date: Fri, 22 May 2026 00:31:46 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7b84cebc06dce-MIA
+Invalid username and/or password
+
+19:31:46.977 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 679
+1 < 400
+1 < Date: Fri, 22 May 2026 00:31:46 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7b84cee97e9f5-MIA
+Invalid username and/or password
+
+19:31:46.979 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 681
+1 < 400
+1 < Date: Fri, 22 May 2026 00:31:46 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7b84cea5a2583-MIA
+Invalid username and/or password
+
+19:31:46.980 [pool-2-thread-4] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 679, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+19:31:46.981 [pool-2-thread-5] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 681, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+19:31:46.982 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 684
+1 < 400
+1 < Date: Fri, 22 May 2026 00:31:46 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7b84ce96a4c33-MIA
+Invalid username and/or password
+
+19:31:46.985 [pool-2-thread-3] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 684, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+19:31:46.999 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:31:47.004 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/john/demo
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:31:47.182 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 291
+1 < 400
+1 < Date: Fri, 22 May 2026 00:31:47 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7b84f1b66a524-MIA
+Invalid username and/or password
+
+19:31:47.184 [pool-2-thread-1] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 291, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+19:31:47.295 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 290
+1 < 200
+1 < Date: Fri, 22 May 2026 00:31:47 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7b84fd9f0ed32-MIA
+{"id":12212,"firstName":"John","lastName":"Smith","address":{"street":"1431 Main St","city":"Beverly Hills","state":"CA","zipCode":"90210"},"phoneNumber":"310-447-4121","ssn":"622-11-9999"}
+
+19:31:47.536 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 536
+1 < 400
+1 < Date: Fri, 22 May 2026 00:31:47 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7b84fdbb9ae1e-MIA
+Invalid username and/or password
+
+19:31:47.537 [pool-2-thread-4] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 536, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+19:31:47.874 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:org/udea/parabank/authentication-and-session-control.feature
+19:31:48.220 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 3 (1 remaining) classpath:org/udea/parabank/billpay.feature
+19:31:48.268 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:org/udea/parabank/login.feature
+19:35:26.386 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:35:27.909 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/john/demo
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:35:28.639 [main] DEBUG com.intuit.karate - response time in milliseconds: 728
+1 < 200
+1 < Date: Fri, 22 May 2026 00:35:28 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7bdb58fa331d7-MIA
+{"id":12212,"firstName":"John","lastName":"Smith","address":{"street":"1431 Main St","city":"Beverly Hills","state":"CA","zipCode":"90210"},"phoneNumber":"310-447-4121","ssn":"622-11-9999"}
+
+19:35:28.691 [main] ERROR com.intuit.karate - classpath:org/udea/parabank/authentication-and-session-control.feature:18
+And match sessionCookie != null
+match failed: NOT_EQUALS
+  $ | is equal (NULL:NULL)
+  null
+  null
+
+classpath:org/udea/parabank/authentication-and-session-control.feature:18
+19:35:28.731 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/usuarioInvalido/claveIncorrecta
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:35:29.243 [main] DEBUG com.intuit.karate - response time in milliseconds: 512
+1 < 400
+1 < Date: Fri, 22 May 2026 00:35:29 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7bdb99fad4c2d-MIA
+Invalid username and/or password
+
+19:36:16.093 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:36:16.097 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1779410176096
+19:36:16.105 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+19:36:17.696 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/usuarioInvalido/claveIncorrecta
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:17.696 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/john/demo
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:17.696 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:17.696 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:17.696 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:18.624 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 926
+1 < 400
+1 < Date: Fri, 22 May 2026 00:36:18 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7beef8bb1258f-MIA
+Invalid username and/or password
+
+19:36:18.627 [pool-2-thread-4] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 926, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+19:36:18.648 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:18.763 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1066
+1 < 400
+1 < Date: Fri, 22 May 2026 00:36:18 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7beef8e1a5f7a-MIA
+Invalid username and/or password
+
+19:36:18.763 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1067
+1 < 400
+1 < Date: Fri, 22 May 2026 00:36:18 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7beef8e7ddd78-MIA
+Invalid username and/or password
+
+19:36:18.763 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1067
+1 < 400
+1 < Date: Fri, 22 May 2026 00:36:18 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7beef8ad4da04-MIA
+Invalid username and/or password
+
+19:36:18.766 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1070
+1 < 200
+1 < Date: Fri, 22 May 2026 00:36:18 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7beef8b355d37-MIA
+{"id":12212,"firstName":"John","lastName":"Smith","address":{"street":"1431 Main St","city":"Beverly Hills","state":"CA","zipCode":"90210"},"phoneNumber":"310-447-4121","ssn":"622-11-9999"}
+
+19:36:18.767 [pool-2-thread-3] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 1066, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+19:36:18.767 [pool-2-thread-5] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 1067, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+19:36:18.786 [pool-2-thread-1] ERROR com.intuit.karate - classpath:org/udea/parabank/authentication-and-session-control.feature:18
+And match sessionCookie != null
+match failed: NOT_EQUALS
+  $ | is equal (NULL:NULL)
+  null
+  null
+
+classpath:org/udea/parabank/authentication-and-session-control.feature:18
+19:36:18.788 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:18.792 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/john/demo
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:19.074 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 281
+1 < 200
+1 < Date: Fri, 22 May 2026 00:36:19 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7bef27fa31efb-MIA
+{"id":12212,"firstName":"John","lastName":"Smith","address":{"street":"1431 Main St","city":"Beverly Hills","state":"CA","zipCode":"90210"},"phoneNumber":"310-447-4121","ssn":"622-11-9999"}
+
+19:36:19.077 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 288
+1 < 400
+1 < Date: Fri, 22 May 2026 00:36:19 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7bef27a90d9b1-MIA
+Invalid username and/or password
+
+19:36:19.079 [pool-2-thread-3] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 288, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+19:36:19.081 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 432
+1 < 400
+1 < Date: Fri, 22 May 2026 00:36:19 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7bef19a1d227f-MIA
+Invalid username and/or password
+
+19:36:19.083 [pool-2-thread-4] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 432, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+19:36:19.700 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:org/udea/parabank/authentication-and-session-control.feature
+19:36:20.045 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 3 (1 remaining) classpath:org/udea/parabank/billpay.feature
+19:36:20.086 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:org/udea/parabank/login.feature
+21:17:25.049 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:17:26.656 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:34.400 [main] DEBUG com.intuit.karate - response time in milliseconds: 7740
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:34 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff85344394067b7-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:34.539 [main] INFO  com.intuit.karate - [print] Resumen de tipos de cuenta: 
+21:17:34.541 [main] INFO  com.intuit.karate - [print]   CHECKING: 9 
+21:17:34.543 [main] INFO  com.intuit.karate - [print]   SAVINGS: 2 
+21:17:34.545 [main] INFO  com.intuit.karate - [print]   Total: 11 
+21:17:35.618 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:17:35.646 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:36.405 [main] DEBUG com.intuit.karate - response time in milliseconds: 758
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:36 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff85350193c55ca-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:36.439 [main] ERROR com.intuit.karate - classpath:org/udea/parabank/account-data-integrity.feature:46
+And match each response[*].id == '#? it > 0'
+ReferenceError: "it" is not defined
+classpath:org/udea/parabank/account-data-integrity.feature:46
+21:17:36.639 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:17:36.653 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:37.437 [main] DEBUG com.intuit.karate - response time in milliseconds: 784
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:37 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff853570cddeed9-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:37.448 [main] INFO  com.intuit.karate - [print] Validación de customerId completada. Todas las cuentas pertenecen a: 12212 
+21:17:37.584 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:17:37.598 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:39.053 [main] DEBUG com.intuit.karate - response time in milliseconds: 1455
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:38 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff85361fb71dfbd-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:39.056 [main] ERROR com.intuit.karate - classpath:org/udea/parabank/account-data-integrity.feature:170
+And match accountCount > 0
+no step-definition method match found for: match accountCount > 0
+classpath:org/udea/parabank/account-data-integrity.feature:170
+21:17:39.193 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:17:39.206 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:40.088 [main] DEBUG com.intuit.karate - response time in milliseconds: 881
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:39 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff853674f588750-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:40.112 [main] INFO  com.intuit.karate - [print] Estadísticas de Balance: 
+21:17:40.113 [main] INFO  com.intuit.karate - [print]   Saldo mínimo: -2300.0 
+21:17:40.115 [main] INFO  com.intuit.karate - [print]   Saldo máximo: 1351.12 
+21:17:40.116 [main] INFO  com.intuit.karate - [print]   Saldo promedio: 153.88 
+21:17:40.117 [main] INFO  com.intuit.karate - [print]   Cuentas con saldo cero: 1 
+21:17:40.118 [main] INFO  com.intuit.karate - [print]   Saldo total: 1692.67 
+21:17:40.234 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:17:40.248 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:40.904 [main] DEBUG com.intuit.karate - response time in milliseconds: 654
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:40 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff8536d88301bc6-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:41.000 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:17:41.011 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:41.547 [main] DEBUG com.intuit.karate - response time in milliseconds: 535
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:41 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff853719876aa94-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:41.549 [main] ERROR com.intuit.karate - classpath:org/udea/parabank/account-data-integrity.feature:22
+And match accountCount > 0
+no step-definition method match found for: match accountCount > 0
+classpath:org/udea/parabank/account-data-integrity.feature:22
+21:17:41.641 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:17:41.651 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:41.965 [main] DEBUG com.intuit.karate - response time in milliseconds: 314
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:41 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff853747ff367e1-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:41.983 [main] ERROR com.intuit.karate - classpath:org/udea/parabank/account-data-integrity.feature:120
+And match balanceValidation.hasNegativeBalances == false
+match failed: EQUALS
+  $ | not equal (BOOLEAN:BOOLEAN)
+  true
+  false
+
+classpath:org/udea/parabank/account-data-integrity.feature:120
+21:17:42.096 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:17:42.106 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:42.847 [main] DEBUG com.intuit.karate - response time in milliseconds: 741
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:42 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff85377cca56b81-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:42.848 [main] ERROR com.intuit.karate - classpath:org/udea/parabank/account-data-integrity.feature:22
+And match accountCount > 0
+no step-definition method match found for: match accountCount > 0
+classpath:org/udea/parabank/account-data-integrity.feature:22
+21:17:42.857 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:43.955 [main] DEBUG com.intuit.karate - response time in milliseconds: 1098
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:43 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff8537dc8455d30-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:43.967 [main] ERROR com.intuit.karate - classpath:org/udea/parabank/account-data-integrity.feature:46
+And match each response[*].id == '#? it > 0'
+ReferenceError: "it" is not defined
+classpath:org/udea/parabank/account-data-integrity.feature:46
+21:17:43.975 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:44.460 [main] DEBUG com.intuit.karate - response time in milliseconds: 485
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:44 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff85383bd8fd9a1-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:44.471 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:44.823 [main] DEBUG com.intuit.karate - response time in milliseconds: 352
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:44 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff853866a00f7aa-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:44.826 [main] ERROR com.intuit.karate - classpath:org/udea/parabank/account-data-integrity.feature:120
+And match balanceValidation.hasNegativeBalances == false
+match failed: EQUALS
+  $ | not equal (BOOLEAN:BOOLEAN)
+  true
+  false
+
+classpath:org/udea/parabank/account-data-integrity.feature:120
+21:17:44.834 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:45.245 [main] DEBUG com.intuit.karate - response time in milliseconds: 411
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:45 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff85388b891c288-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:45.248 [main] INFO  com.intuit.karate - [print] Validación de customerId completada. Todas las cuentas pertenecen a: 12212 
+21:17:45.256 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:46.129 [main] DEBUG com.intuit.karate - response time in milliseconds: 873
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:46 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff8538d2ba30d84-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:46.130 [main] ERROR com.intuit.karate - classpath:org/udea/parabank/account-data-integrity.feature:170
+And match accountCount > 0
+no step-definition method match found for: match accountCount > 0
+classpath:org/udea/parabank/account-data-integrity.feature:170
+21:17:46.139 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:46.483 [main] DEBUG com.intuit.karate - response time in milliseconds: 343
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:46 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff85390696f7436-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:46.487 [main] INFO  com.intuit.karate - [print] Resumen de tipos de cuenta: 
+21:17:46.488 [main] INFO  com.intuit.karate - [print]   CHECKING: 9 
+21:17:46.488 [main] INFO  com.intuit.karate - [print]   SAVINGS: 2 
+21:17:46.489 [main] INFO  com.intuit.karate - [print]   Total: 11 
+21:17:46.498 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:17:46.850 [main] DEBUG com.intuit.karate - response time in milliseconds: 352
+1 < 200
+1 < Date: Fri, 22 May 2026 02:17:46 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff85392f9147438-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:17:46.855 [main] INFO  com.intuit.karate - [print] Estadísticas de Balance: 
+21:17:46.855 [main] INFO  com.intuit.karate - [print]   Saldo mínimo: -2300.0 
+21:17:46.855 [main] INFO  com.intuit.karate - [print]   Saldo máximo: 1351.12 
+21:17:46.856 [main] INFO  com.intuit.karate - [print]   Saldo promedio: 153.88 
+21:17:46.856 [main] INFO  com.intuit.karate - [print]   Cuentas con saldo cero: 1 
+21:17:46.856 [main] INFO  com.intuit.karate - [print]   Saldo total: 1692.67 
+21:26:18.661 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:26:20.199 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:26:21.329 [main] DEBUG com.intuit.karate - response time in milliseconds: 1126
+1 < 200
+1 < Date: Fri, 22 May 2026 02:26:21 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff86020ee9e3404-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:26:21.378 [main] ERROR com.intuit.karate - classpath:org/udea/parabank/account-data-integrity.feature:22
+And match accountCount > 0
+no step-definition method match found for: match accountCount > 0
+classpath:org/udea/parabank/account-data-integrity.feature:22
+21:33:00.020 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:33:01.599 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:33:02.646 [main] DEBUG com.intuit.karate - response time in milliseconds: 1044
+1 < 200
+1 < Date: Fri, 22 May 2026 02:33:02 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff869edbfc79af5-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1095.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1487.12}]
+
+21:36:18.291 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:36:19.840 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:36:20.464 [main] DEBUG com.intuit.karate - response time in milliseconds: 621
+1 < 200
+1 < Date: Fri, 22 May 2026 02:36:20 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff86ec22af9dae1-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":910.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1672.12}]
+
+21:36:20.565 [main] ERROR com.intuit.karate - classpath:org/udea/parabank/account-data-integrity.feature:46
+And match each response[*].id == '#? it > 0'
+ReferenceError: "it" is not defined
+classpath:org/udea/parabank/account-data-integrity.feature:46
+21:36:21.656 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:36:21.677 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:36:21.969 [main] DEBUG com.intuit.karate - response time in milliseconds: 291
+1 < 200
+1 < Date: Fri, 22 May 2026 02:36:21 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff86ecc8e5edb05-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":910.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1672.12}]
+
+21:38:15.030 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:38:17.336 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:38:18.340 [main] DEBUG com.intuit.karate - response time in milliseconds: 1000
+1 < 200
+1 < Date: Fri, 22 May 2026 02:38:18 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff871a2dde70c57-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":910.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1672.12}]
+
+21:38:19.820 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:38:19.854 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:38:20.295 [main] DEBUG com.intuit.karate - response time in milliseconds: 440
+1 < 200
+1 < Date: Fri, 22 May 2026 02:38:20 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff871af28239add-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":910.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1672.12}]
+
+21:43:56.093 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:43:57.696 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:43:58.434 [main] DEBUG com.intuit.karate - response time in milliseconds: 734
+1 < 200
+1 < Date: Fri, 22 May 2026 02:43:58 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff879effb3a749e-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":903.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1679.12}]
+
+21:43:59.625 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:43:59.646 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:44:00.431 [main] DEBUG com.intuit.karate - response time in milliseconds: 785
+1 < 200
+1 < Date: Fri, 22 May 2026 02:44:00 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff879fd0aa7ed21-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":903.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1679.12}]
+
+21:44:00.645 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:44:00.655 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:44:01.673 [main] DEBUG com.intuit.karate - response time in milliseconds: 1016
+1 < 200
+1 < Date: Fri, 22 May 2026 02:44:01 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff87a025e36e0f8-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":903.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1679.12}]
+
+21:47:18.869 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:47:20.440 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:47:21.082 [main] DEBUG com.intuit.karate - response time in milliseconds: 638
+1 < 200
+1 < Date: Fri, 22 May 2026 02:47:21 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff87ee2ffd19ae6-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":852.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1730.12}]
+
+21:47:22.244 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:47:22.271 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:47:22.716 [main] DEBUG com.intuit.karate - response time in milliseconds: 444
+1 < 200
+1 < Date: Fri, 22 May 2026 02:47:22 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff87eed382a745e-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":852.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1730.12}]
+
+21:47:22.940 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:47:22.952 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:47:23.235 [main] DEBUG com.intuit.karate - response time in milliseconds: 283
+1 < 200
+1 < Date: Fri, 22 May 2026 02:47:23 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff87ef16b3b99b9-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":852.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1730.12}]
+
+21:47:23.373 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:47:23.385 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:47:23.818 [main] DEBUG com.intuit.karate - response time in milliseconds: 432
+1 < 200
+1 < Date: Fri, 22 May 2026 02:47:23 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff87ef42d9d9685-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":852.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1730.12}]
+
+21:47:23.844 [main] ERROR com.intuit.karate - classpath:org/udea/parabank/account-data-integrity.feature:120
+And match balanceValidation.hasNegativeBalances == false
+match failed: EQUALS
+  $ | not equal (BOOLEAN:BOOLEAN)
+  true
+  false
+
+classpath:org/udea/parabank/account-data-integrity.feature:120
+21:48:34.014 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:48:35.591 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:48:36.203 [main] DEBUG com.intuit.karate - response time in milliseconds: 609
+1 < 200
+1 < Date: Fri, 22 May 2026 02:48:36 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff880b88cd53a83-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":852.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1730.12}]
+
+21:48:37.388 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:48:37.409 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:48:37.698 [main] DEBUG com.intuit.karate - response time in milliseconds: 288
+1 < 200
+1 < Date: Fri, 22 May 2026 02:48:37 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff880c2dc9d337c-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":852.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1730.12}]
+
+21:48:37.902 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:48:37.915 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:48:38.346 [main] DEBUG com.intuit.karate - response time in milliseconds: 431
+1 < 200
+1 < Date: Fri, 22 May 2026 02:48:38 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff880c5fc53daa9-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":852.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1730.12}]
+
+21:48:38.485 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:48:38.496 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:48:39.004 [main] DEBUG com.intuit.karate - response time in milliseconds: 506
+1 < 200
+1 < Date: Fri, 22 May 2026 02:48:38 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff880c99d2447ad-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":852.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1730.12}]
+
+21:48:39.033 [main] ERROR com.intuit.karate - classpath:org/udea/parabank/account-data-integrity.feature:120
+And match balanceValidation.hasNegativeBalances == false
+match failed: EQUALS
+  $ | not equal (BOOLEAN:BOOLEAN)
+  true
+  false
+
+classpath:org/udea/parabank/account-data-integrity.feature:120
+21:49:37.175 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:49:38.773 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:49:39.556 [main] DEBUG com.intuit.karate - response time in milliseconds: 781
+1 < 200
+1 < Date: Fri, 22 May 2026 02:49:39 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff882455820257f-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":732.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1850.12}]
+
+21:49:40.701 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:49:40.719 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:49:41.147 [main] DEBUG com.intuit.karate - response time in milliseconds: 427
+1 < 200
+1 < Date: Fri, 22 May 2026 02:49:41 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff8824e78dd8754-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":732.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1850.12}]
+
+21:49:41.349 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:49:41.362 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:49:41.648 [main] DEBUG com.intuit.karate - response time in milliseconds: 286
+1 < 200
+1 < Date: Fri, 22 May 2026 02:49:41 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff882528e05f51d-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":732.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1850.12}]
+
+21:49:41.789 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:49:41.800 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:49:42.089 [main] DEBUG com.intuit.karate - response time in milliseconds: 289
+1 < 200
+1 < Date: Fri, 22 May 2026 02:49:42 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff882554e81da4b-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":732.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1850.12}]
+
+21:58:03.554 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:58:05.063 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:58:06.018 [main] DEBUG com.intuit.karate - response time in milliseconds: 952
+1 < 200
+1 < Date: Fri, 22 May 2026 02:58:05 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff88ea1babe8754-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:58:07.134 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:58:07.153 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:58:07.586 [main] DEBUG com.intuit.karate - response time in milliseconds: 433
+1 < 200
+1 < Date: Fri, 22 May 2026 02:58:07 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff88eabb95a70ab-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:58:07.794 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:58:07.807 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:58:08.233 [main] DEBUG com.intuit.karate - response time in milliseconds: 426
+1 < 200
+1 < Date: Fri, 22 May 2026 02:58:08 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff88eafc955afde-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:58:08.385 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:58:08.397 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:58:08.713 [main] DEBUG com.intuit.karate - response time in milliseconds: 314
+1 < 200
+1 < Date: Fri, 22 May 2026 02:58:08 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff88eb3bafbd327-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:58:08.837 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:58:08.847 [main] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:58:09.275 [main] DEBUG com.intuit.karate - response time in milliseconds: 427
+1 < 200
+1 < Date: Fri, 22 May 2026 02:58:09 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff88eb64805b88d-MIA
+[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-2300.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":10.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+
+21:58:09.299 [main] ERROR com.intuit.karate - classpath:org/udea/parabank/account-data-integrity.feature:120
+And match balanceValidation.hasNegativeBalances == false
+match failed: EQUALS
+  $ | not equal (BOOLEAN:BOOLEAN)
+  true
+  false
+
+classpath:org/udea/parabank/account-data-integrity.feature:120

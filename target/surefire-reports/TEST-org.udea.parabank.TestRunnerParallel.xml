@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.udea.parabank.TestRunnerParallel" time="6.173" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/julianrodriguez/Documents/2. Universidad/Pruebas de software/UDEA_KaratePS/target/test-classes:/home/julianrodriguez/Documents/2. Universidad/Pruebas de software/UDEA_KaratePS/target/classes:/home/julianrodriguez/.m2/repository/com/intuit/karate/karate-core/1.3.1/karate-core-1.3.1.jar:/home/julianrodriguez/.m2/repository/org/graalvm/js/js-scriptengine/22.0.0.2/js-scriptengine-22.0.0.2.jar:/home/julianrodriguez/.m2/repository/org/graalvm/sdk/graal-sdk/22.0.0.2/graal-sdk-22.0.0.2.jar:/home/julianrodriguez/.m2/repository/org/graalvm/js/js/22.0.0.2/js-22.0.0.2.jar:/home/julianrodriguez/.m2/repository/org/graalvm/regex/regex/22.0.0.2/regex-22.0.0.2.jar:/home/julianrodriguez/.m2/repository/org/graalvm/truffle/truffle-api/22.0.0.2/truffle-api-22.0.0.2.jar:/home/julianrodriguez/.m2/repository/org/thymeleaf/thymeleaf/3.0.14.RELEASE/thymeleaf-3.0.14.RELEASE.jar:/home/julianrodriguez/.m2/repository/ognl/ognl/3.1.26/ognl-3.1.26.jar:/home/julianrodriguez/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/home/julianrodriguez/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/home/julianrodriguez/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/home/julianrodriguez/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/julianrodriguez/.m2/repository/com/linecorp/armeria/armeria/1.18.0/armeria-1.18.0.jar:/home/julianrodriguez/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/home/julianrodriguez/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/home/julianrodriguez/.m2/repository/io/micrometer/micrometer-core/1.9.2/micrometer-core-1.9.2.jar:/home/julianrodriguez/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/home/julianrodriguez/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-transport/4.1.79.Final/netty-transport-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-common/4.1.79.Final/netty-common-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-buffer/4.1.79.Final/netty-buffer-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-resolver/4.1.79.Final/netty-resolver-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-codec-haproxy/4.1.79.Final/netty-codec-haproxy-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-codec/4.1.79.Final/netty-codec-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-codec-http2/4.1.79.Final/netty-codec-http2-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-handler/4.1.79.Final/netty-handler-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-codec-http/4.1.79.Final/netty-codec-http-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-resolver-dns/4.1.79.Final/netty-resolver-dns-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-codec-dns/4.1.79.Final/netty-codec-dns-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.79.Final/netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-transport-native-epoll/4.1.79.Final/netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.79.Final/netty-transport-native-unix-common-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.79.Final/netty-transport-classes-epoll-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.79.Final/netty-resolver-dns-classes-macos-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-tcnative-classes/2.0.53.Final/netty-tcnative-classes-2.0.53.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-handler-proxy/4.1.79.Final/netty-handler-proxy-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-codec-socks/4.1.79.Final/netty-codec-socks-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.7.1/brotli4j-1.7.1.jar:/home/julianrodriguez/.m2/repository/com/aayushatharva/brotli4j/native-linux-x86_64/1.7.1/native-linux-x86_64-1.7.1.jar:/home/julianrodriguez/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/julianrodriguez/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/julianrodriguez/.m2/repository/ch/qos/logback/logback-classic/1.2.9/logback-classic-1.2.9.jar:/home/julianrodriguez/.m2/repository/ch/qos/logback/logback-core/1.2.9/logback-core-1.2.9.jar:/home/julianrodriguez/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.32/jcl-over-slf4j-1.7.32.jar:/home/julianrodriguez/.m2/repository/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar:/home/julianrodriguez/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/home/julianrodriguez/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/home/julianrodriguez/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/home/julianrodriguez/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/home/julianrodriguez/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/home/julianrodriguez/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/home/julianrodriguez/.m2/repository/org/yaml/snakeyaml/1.32/snakeyaml-1.32.jar:/home/julianrodriguez/.m2/repository/de/siegmar/fastcsv/2.0.0/fastcsv-2.0.0.jar:/home/julianrodriguez/.m2/repository/info/picocli/picocli/4.6.1/picocli-4.6.1.jar:/home/julianrodriguez/.m2/repository/io/github/classgraph/classgraph/4.8.149/classgraph-4.8.149.jar:/home/julianrodriguez/.m2/repository/io/github/t12y/resemble/1.0.2/resemble-1.0.2.jar:/home/julianrodriguez/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/home/julianrodriguez/.m2/repository/com/intuit/karate/karate-junit5/1.3.1/karate-junit5-1.3.1.jar:/home/julianrodriguez/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/home/julianrodriguez/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/julianrodriguez/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/julianrodriguez/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/home/julianrodriguez/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/home/julianrodriguez/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/home/julianrodriguez/.m2/repository/net/masterthought/cucumber-reporting/5.7.4/cucumber-reporting-5.7.4.jar:/home/julianrodriguez/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.2/jackson-databind-2.13.2.2.jar:/home/julianrodriguez/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.2/jackson-datatype-jsr310-2.13.2.jar:/home/julianrodriguez/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/home/julianrodriguez/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/julianrodriguez/.m2/repository/joda-time/joda-time/2.10.14/joda-time-2.10.14.jar:/home/julianrodriguez/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/julianrodriguez/.m2/repository/org/codehaus/plexus/plexus-utils/3.4.2/plexus-utils-3.4.2.jar:/home/julianrodriguez/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/home/julianrodriguez/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/julianrodriguez/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/julianrodriguez/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/julianrodriguez/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/home/julianrodriguez/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/home/julianrodriguez/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/julianrodriguez/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20211018.2/owasp-java-html-sanitizer-20211018.2.jar:/home/julianrodriguez/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/home/julianrodriguez/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/julianrodriguez/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/julianrodriguez/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/home/julianrodriguez/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/julianrodriguez/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/home/julianrodriguez/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/home/julianrodriguez/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/home/julianrodriguez/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/home/julianrodriguez/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/home/julianrodriguez/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/home/julianrodriguez/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/home/julianrodriguez/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/home/julianrodriguez/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/home/julianrodriguez/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/home/julianrodriguez/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/julianrodriguez/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/home/julianrodriguez/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/home/julianrodriguez/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/home/julianrodriguez/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/home/julianrodriguez/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/home/julianrodriguez/.sdkman/candidates/java/8.0.492-zulu/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/home/julianrodriguez/Documents/2. Universidad/Pruebas de software/UDEA_KaratePS/target/surefire/surefirebooter4653994464402220754.jar /home/julianrodriguez/Documents/2. Universidad/Pruebas de software/UDEA_KaratePS/target/surefire 2026-05-21T19-36-14_256-jvmRun1 surefire3964496338950467624tmp surefire_08184150398251076500tmp"/>
+    <property name="test" value="TestRunnerParallel"/>
+    <property name="surefire.test.class.path" value="/home/julianrodriguez/Documents/2. Universidad/Pruebas de software/UDEA_KaratePS/target/test-classes:/home/julianrodriguez/Documents/2. Universidad/Pruebas de software/UDEA_KaratePS/target/classes:/home/julianrodriguez/.m2/repository/com/intuit/karate/karate-core/1.3.1/karate-core-1.3.1.jar:/home/julianrodriguez/.m2/repository/org/graalvm/js/js-scriptengine/22.0.0.2/js-scriptengine-22.0.0.2.jar:/home/julianrodriguez/.m2/repository/org/graalvm/sdk/graal-sdk/22.0.0.2/graal-sdk-22.0.0.2.jar:/home/julianrodriguez/.m2/repository/org/graalvm/js/js/22.0.0.2/js-22.0.0.2.jar:/home/julianrodriguez/.m2/repository/org/graalvm/regex/regex/22.0.0.2/regex-22.0.0.2.jar:/home/julianrodriguez/.m2/repository/org/graalvm/truffle/truffle-api/22.0.0.2/truffle-api-22.0.0.2.jar:/home/julianrodriguez/.m2/repository/org/thymeleaf/thymeleaf/3.0.14.RELEASE/thymeleaf-3.0.14.RELEASE.jar:/home/julianrodriguez/.m2/repository/ognl/ognl/3.1.26/ognl-3.1.26.jar:/home/julianrodriguez/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/home/julianrodriguez/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/home/julianrodriguez/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/home/julianrodriguez/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/julianrodriguez/.m2/repository/com/linecorp/armeria/armeria/1.18.0/armeria-1.18.0.jar:/home/julianrodriguez/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/home/julianrodriguez/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/home/julianrodriguez/.m2/repository/io/micrometer/micrometer-core/1.9.2/micrometer-core-1.9.2.jar:/home/julianrodriguez/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/home/julianrodriguez/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-transport/4.1.79.Final/netty-transport-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-common/4.1.79.Final/netty-common-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-buffer/4.1.79.Final/netty-buffer-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-resolver/4.1.79.Final/netty-resolver-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-codec-haproxy/4.1.79.Final/netty-codec-haproxy-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-codec/4.1.79.Final/netty-codec-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-codec-http2/4.1.79.Final/netty-codec-http2-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-handler/4.1.79.Final/netty-handler-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-codec-http/4.1.79.Final/netty-codec-http-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-resolver-dns/4.1.79.Final/netty-resolver-dns-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-codec-dns/4.1.79.Final/netty-codec-dns-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.79.Final/netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-transport-native-epoll/4.1.79.Final/netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.79.Final/netty-transport-native-unix-common-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.79.Final/netty-transport-classes-epoll-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.79.Final/netty-resolver-dns-classes-macos-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-tcnative-classes/2.0.53.Final/netty-tcnative-classes-2.0.53.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-handler-proxy/4.1.79.Final/netty-handler-proxy-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/io/netty/netty-codec-socks/4.1.79.Final/netty-codec-socks-4.1.79.Final.jar:/home/julianrodriguez/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.7.1/brotli4j-1.7.1.jar:/home/julianrodriguez/.m2/repository/com/aayushatharva/brotli4j/native-linux-x86_64/1.7.1/native-linux-x86_64-1.7.1.jar:/home/julianrodriguez/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/julianrodriguez/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/julianrodriguez/.m2/repository/ch/qos/logback/logback-classic/1.2.9/logback-classic-1.2.9.jar:/home/julianrodriguez/.m2/repository/ch/qos/logback/logback-core/1.2.9/logback-core-1.2.9.jar:/home/julianrodriguez/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.32/jcl-over-slf4j-1.7.32.jar:/home/julianrodriguez/.m2/repository/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar:/home/julianrodriguez/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/home/julianrodriguez/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/home/julianrodriguez/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/home/julianrodriguez/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/home/julianrodriguez/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/home/julianrodriguez/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/home/julianrodriguez/.m2/repository/org/yaml/snakeyaml/1.32/snakeyaml-1.32.jar:/home/julianrodriguez/.m2/repository/de/siegmar/fastcsv/2.0.0/fastcsv-2.0.0.jar:/home/julianrodriguez/.m2/repository/info/picocli/picocli/4.6.1/picocli-4.6.1.jar:/home/julianrodriguez/.m2/repository/io/github/classgraph/classgraph/4.8.149/classgraph-4.8.149.jar:/home/julianrodriguez/.m2/repository/io/github/t12y/resemble/1.0.2/resemble-1.0.2.jar:/home/julianrodriguez/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/home/julianrodriguez/.m2/repository/com/intuit/karate/karate-junit5/1.3.1/karate-junit5-1.3.1.jar:/home/julianrodriguez/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/home/julianrodriguez/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/julianrodriguez/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/julianrodriguez/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/home/julianrodriguez/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/home/julianrodriguez/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/home/julianrodriguez/.m2/repository/net/masterthought/cucumber-reporting/5.7.4/cucumber-reporting-5.7.4.jar:/home/julianrodriguez/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.2/jackson-databind-2.13.2.2.jar:/home/julianrodriguez/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.2/jackson-datatype-jsr310-2.13.2.jar:/home/julianrodriguez/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/home/julianrodriguez/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/julianrodriguez/.m2/repository/joda-time/joda-time/2.10.14/joda-time-2.10.14.jar:/home/julianrodriguez/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/julianrodriguez/.m2/repository/org/codehaus/plexus/plexus-utils/3.4.2/plexus-utils-3.4.2.jar:/home/julianrodriguez/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/home/julianrodriguez/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/julianrodriguez/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/julianrodriguez/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/julianrodriguez/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/home/julianrodriguez/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/home/julianrodriguez/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/julianrodriguez/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20211018.2/owasp-java-html-sanitizer-20211018.2.jar:/home/julianrodriguez/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/home/julianrodriguez/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/julianrodriguez/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/julianrodriguez/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/home/julianrodriguez/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/julianrodriguez/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/home/julianrodriguez/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/home/julianrodriguez/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/home/julianrodriguez/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/home/julianrodriguez/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/home/julianrodriguez/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/home/julianrodriguez/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/home/julianrodriguez/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/home/julianrodriguez/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/home/julianrodriguez/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/home/julianrodriguez/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/julianrodriguez/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/home/julianrodriguez/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/home/julianrodriguez/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/home/julianrodriguez/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/home/julianrodriguez/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/julianrodriguez"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/home/julianrodriguez/.sdkman/candidates/java/8.0.492-zulu/jre"/>
+    <property name="basedir" value="/home/julianrodriguez/Documents/2. Universidad/Pruebas de software/UDEA_KaratePS"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="jdk.vendor.version" value="Zulu 8.94.0.17-CA-linux64"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/julianrodriguez/Documents/2. Universidad/Pruebas de software/UDEA_KaratePS/target/surefire/surefirebooter4653994464402220754.jar"/>
+    <property name="sun.boot.class.path" value="/home/julianrodriguez/.sdkman/candidates/java/8.0.492-zulu/jre/lib/resources.jar:/home/julianrodriguez/.sdkman/candidates/java/8.0.492-zulu/jre/lib/rt.jar:/home/julianrodriguez/.sdkman/candidates/java/8.0.492-zulu/jre/lib/sunrsasign.jar:/home/julianrodriguez/.sdkman/candidates/java/8.0.492-zulu/jre/lib/jsse.jar:/home/julianrodriguez/.sdkman/candidates/java/8.0.492-zulu/jre/lib/jce.jar:/home/julianrodriguez/.sdkman/candidates/java/8.0.492-zulu/jre/lib/charsets.jar:/home/julianrodriguez/.sdkman/candidates/java/8.0.492-zulu/jre/lib/jfr.jar:/home/julianrodriguez/.sdkman/candidates/java/8.0.492-zulu/jre/lib/cat.jar:/home/julianrodriguez/.sdkman/candidates/java/8.0.492-zulu/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_492-b09"/>
+    <property name="user.name" value="julianrodriguez"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="7.0.9-204.fc44.x86_64"/>
+    <property name="java.endorsed.dirs" value="/home/julianrodriguez/.sdkman/candidates/java/8.0.492-zulu/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/julianrodriguez/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_492"/>
+    <property name="user.dir" value="/home/julianrodriguez/Documents/2. Universidad/Pruebas de software/UDEA_KaratePS"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="25.492-b09"/>
+    <property name="java.specification.maintenance.version" value="6"/>
+    <property name="java.ext.dirs" value="/home/julianrodriguez/.sdkman/candidates/java/8.0.492-zulu/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testParallel" classname="org.udea.parabank.TestRunnerParallel" time="6.151">
+    <failure message="match failed: NOT_EQUALS&#10;  $ | is equal (NULL:NULL)&#10;  null&#10;  null&#10;&#10;classpath:org/udea/parabank/authentication-and-session-control.feature:18&#10;status code was: 400, expected: 200, response time in milliseconds: 1066, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: &#10;Invalid username and/or password&#10;classpath:org/udea/parabank/billpay.feature:13&#10;status code was: 400, expected: 200, response time in milliseconds: 926, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: &#10;Invalid username and/or password&#10;classpath:org/udea/parabank/billpay.feature:13&#10;status code was: 400, expected: 200, response time in milliseconds: 1067, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: &#10;Invalid username and/or password&#10;classpath:org/udea/parabank/billpay.feature:13&#10;status code was: 400, expected: 200, response time in milliseconds: 432, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: &#10;Invalid username and/or password&#10;classpath:org/udea/parabank/billpay.feature:13&#10;status code was: 400, expected: 200, response time in milliseconds: 288, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: &#10;Invalid username and/or password&#10;classpath:org/udea/parabank/billpay.feature:13 ==&gt; expected: &lt;0&gt; but was: &lt;6&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+match failed: NOT_EQUALS
+  $ | is equal (NULL:NULL)
+  null
+  null
+
+classpath:org/udea/parabank/authentication-and-session-control.feature:18
+status code was: 400, expected: 200, response time in milliseconds: 1066, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+status code was: 400, expected: 200, response time in milliseconds: 926, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+status code was: 400, expected: 200, response time in milliseconds: 1067, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+status code was: 400, expected: 200, response time in milliseconds: 432, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+status code was: 400, expected: 200, response time in milliseconds: 288, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13 ==> expected: <0> but was: <6>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:542)
+	at org.udea.parabank.TestRunnerParallel.testParallel(TestRunnerParallel.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:55)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:223)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:175)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:139)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]></failure>
+    <system-out><![CDATA[19:36:16.093 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:36:16.097 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1779410176096
+19:36:16.105 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+19:36:17.696 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/usuarioInvalido/claveIncorrecta
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:17.696 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/john/demo
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:17.696 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:17.696 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:17.696 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:18.624 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 926
+1 < 400
+1 < Date: Fri, 22 May 2026 00:36:18 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7beef8bb1258f-MIA
+Invalid username and/or password
+
+19:36:18.627 [pool-2-thread-4] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 926, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+19:36:18.648 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:18.763 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1066
+1 < 400
+1 < Date: Fri, 22 May 2026 00:36:18 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7beef8e1a5f7a-MIA
+Invalid username and/or password
+
+19:36:18.763 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1067
+1 < 400
+1 < Date: Fri, 22 May 2026 00:36:18 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7beef8e7ddd78-MIA
+Invalid username and/or password
+
+19:36:18.763 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1067
+1 < 400
+1 < Date: Fri, 22 May 2026 00:36:18 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7beef8ad4da04-MIA
+Invalid username and/or password
+
+19:36:18.766 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1070
+1 < 200
+1 < Date: Fri, 22 May 2026 00:36:18 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7beef8b355d37-MIA
+{"id":12212,"firstName":"John","lastName":"Smith","address":{"street":"1431 Main St","city":"Beverly Hills","state":"CA","zipCode":"90210"},"phoneNumber":"310-447-4121","ssn":"622-11-9999"}
+
+19:36:18.767 [pool-2-thread-3] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 1066, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+19:36:18.767 [pool-2-thread-5] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 1067, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+19:36:18.786 [pool-2-thread-1] ERROR com.intuit.karate - classpath:org/udea/parabank/authentication-and-session-control.feature:18
+And match sessionCookie != null
+match failed: NOT_EQUALS
+  $ | is equal (NULL:NULL)
+  null
+  null
+
+classpath:org/udea/parabank/authentication-and-session-control.feature:18
+19:36:18.788 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/bob/12345
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:18.792 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://parabank.parasoft.com/parabank/services/bank/login/john/demo
+1 > Accept: application/json
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_492)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:36:19.074 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 281
+1 < 200
+1 < Date: Fri, 22 May 2026 00:36:19 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7bef27fa31efb-MIA
+{"id":12212,"firstName":"John","lastName":"Smith","address":{"street":"1431 Main St","city":"Beverly Hills","state":"CA","zipCode":"90210"},"phoneNumber":"310-447-4121","ssn":"622-11-9999"}
+
+19:36:19.077 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 288
+1 < 400
+1 < Date: Fri, 22 May 2026 00:36:19 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7bef27a90d9b1-MIA
+Invalid username and/or password
+
+19:36:19.079 [pool-2-thread-3] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 288, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+19:36:19.081 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 432
+1 < 400
+1 < Date: Fri, 22 May 2026 00:36:19 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 32
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 9ff7bef19a1d227f-MIA
+Invalid username and/or password
+
+19:36:19.083 [pool-2-thread-4] ERROR com.intuit.karate - classpath:org/udea/parabank/billpay.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 432, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+---------------------------------------------------------
+feature: classpath:org/udea/parabank/authentication-and-session-control.feature
+scenarios:  2 | passed:  1 | failed:  1 | time: 2.8393
+---------------------------------------------------------
+
+19:36:19.700 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:org/udea/parabank/authentication-and-session-control.feature
+---------------------------------------------------------
+feature: classpath:org/udea/parabank/billpay.feature
+scenarios:  5 | passed:  0 | failed:  5 | time: 4.8050
+---------------------------------------------------------
+
+19:36:20.045 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 3 (1 remaining) classpath:org/udea/parabank/billpay.feature
+---------------------------------------------------------
+feature: classpath:org/udea/parabank/login.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.2885
+---------------------------------------------------------
+
+19:36:20.086 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:org/udea/parabank/login.feature
+Karate version: 1.3.1
+======================================================
+elapsed:   4.71 | threads:    5 | thread time: 7.93 
+features:     3 | skipped:    0 | efficiency: 0.34
+scenarios:    8 | passed:     2 | failed: 6
+======================================================
+>>> failed features:
+match failed: NOT_EQUALS
+  $ | is equal (NULL:NULL)
+  null
+  null
+
+classpath:org/udea/parabank/authentication-and-session-control.feature:18
+status code was: 400, expected: 200, response time in milliseconds: 1066, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+status code was: 400, expected: 200, response time in milliseconds: 926, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+status code was: 400, expected: 200, response time in milliseconds: 1067, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+status code was: 400, expected: 200, response time in milliseconds: 432, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+status code was: 400, expected: 200, response time in milliseconds: 288, url: https://parabank.parasoft.com/parabank/services/bank/login/bob/12345, response: 
+Invalid username and/or password
+classpath:org/udea/parabank/billpay.feature:13
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.3.1
+file:///home/julianrodriguez/Documents/2.%20Universidad/Pruebas%20de%20software/UDEA_KaratePS/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+    <system-err><![CDATA[May 21, 2026 7:36:20 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/home/julianrodriguez/Documents/2. Universidad/Pruebas de software/UDEA_KaratePS/target/karate-reports/org.udea.parabank.authentication-and-session-control.json' contains 1 feature(s)
+May 21, 2026 7:36:20 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/home/julianrodriguez/Documents/2. Universidad/Pruebas de software/UDEA_KaratePS/target/karate-reports/org.udea.parabank.billpay.json' contains 1 feature(s)
+May 21, 2026 7:36:20 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/home/julianrodriguez/Documents/2. Universidad/Pruebas de software/UDEA_KaratePS/target/karate-reports/org.udea.parabank.login.json' contains 1 feature(s)
+]]></system-err>
+  </testcase>
+</testsuite>
