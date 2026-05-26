@@ -40,6 +40,7 @@ Feature: HU04 - Robustez y Manejo de Excepciones en Pagos (Bill Pay)
   @billpay_hu04_saldo_insuficiente
   Scenario: Bill Pay con monto superior al saldo devuelve respuesta del servidor
 
+    # HU04: POST a /billpay con amount superior al saldo disponible obtenido dinamicamente
     * def billpayMontoExcedente = billpaySaldoDisponible + 9999
 
     Given path 'billpay'
@@ -48,14 +49,15 @@ Feature: HU04 - Robustez y Manejo de Excepciones en Pagos (Bill Pay)
     And header Accept = 'application/json'
     And request billpayPayee
     When method POST
-    Then status 200
-    And match response == { payeeName: '#string', amount: '#number', accountId: '#number' }
-
+    # HU04: debe ser error de logica de negocio (400) y NO error interno del servidor (500)
+    Then status 400
+    And match responseStatus != 500
 
 
   @billpay_hu04_casos_borde
   Scenario Outline: Bill Pay - caso de borde: <descripcionCasoBorde>
 
+    # HU04: Data-Driven - casos de borde con mensajes descriptivos y esquema de errores
     * def billpayPayeeCasoBorde =
       """
       {
@@ -77,13 +79,17 @@ Feature: HU04 - Robustez y Manejo de Excepciones en Pagos (Bill Pay)
     And header Accept = 'application/json'
     And request billpayPayeeCasoBorde
     When method POST
-    Then status 200
-    And match response contains { accountId: '#number' }
+    # HU04: debe retornar 400 (negocio) y NO 500 (error interno)
+    Then status 400
+    And match responseStatus != 500
+    # HU04: mensajes descriptivos siguiendo esquema de errores de la organizacion
+    And match responseType == 'json'
+    And match response == { error: '#string' }
 
     Examples:
       | descripcionCasoBorde          | montoCasoBorde | cuentaDestinoId |
-      | Monto cero                    | 0              | 13677           |
-      | Monto negativo                | -100           | 13677           |
+      | Monto cero                    | 0              | 13322           |
+      | Monto negativo                | -100           | 13322           |
       | Cuenta de destino inexistente | 50             | 99999999        |
 
 
